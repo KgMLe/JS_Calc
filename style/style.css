@@ -1,0 +1,51 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+/* working from top to bottom as displayed on screen */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    border: solid 1px rgb(139, 180, 204);
+    
+}
+
+input{
+    display: block;
+     height: 55px; 
+     width: 295px;
+    grid-column: span 4;
+}
+
+.calculator{
+    border-radius: 14px;
+    background: #0d0d0d;
+    grid-template-columns: repeat(4,60px);
+    border: solid 1px rgb(139, 180, 204);
+    
+}
+
+button{
+    width: 70px;
+    height: 70px;
+    
+}
+
+.calc button{
+    border-radius: 40%; 
+    background-color: rgb(44, 35, 23);
+    color: rgb(139, 180, 204);
+    grid-template-columns: repeat(4,60px);
+    padding: 2px;
+}
+
+
+
