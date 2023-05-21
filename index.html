@@ -13,35 +13,35 @@
        <input type="text" id="inputtext" placeholder="0"> 
        <!-- replace this with text if number does not work -->
        <div class="calc">
-        <button class="del">CE</button>
-       <button class="signs">()</button>
-       <button class="signs">%</button>
-       <button class="signs">÷</button>
+        <button onclick="clear()" class="del">CE</button>
+       <button onclick="parentheses()" class="signs">()</button>
+       <button onclick="percentage('%')" class="signs">%</button>
+       <button onclick="display('/')" class="op">÷</button>
        </div>
        <div class="calc">
-        <button>7</button>
-       <button>8</button>
-       <button>9</button>
-       <button class="signs">x</button>
+        <button onclick="display(7)">7</button>
+       <button onclick="display(8)">8</button>
+       <button onclick="display(9)">9</button>
+       <button onclick="display('*')" class="op">x</button>
        </div>
       <div class="calc">
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="signs">-</button>
+        <button onclick="display (4)">4</button>
+        <button onclick="display (5)">5</button>
+        <button onclick="display (6)">6</button>
+        <button onclick="display ('-')" class="op">-</button>
       </div>
       <div class="calc">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="signs">+</button>
+        <button onclick="display(1)">1</button>
+        <button onclick="display (2)">2</button>
+        <button onclick="display (3)">3</button>
+        <button onclick="display ('-')" class="op">+</button>
       </div>
       <div class="calc
       ">
-        <button>0</button>
-        <button>,</button>
-        <button class="del">DEL</button>
-        <button class="signs">=</button>
+        <button onclick="display (0)">0</button>
+        <button onclick="display (',')">,</button>
+        <button onclick="del()" class="del">DEL</button>
+        <button onclick="ans()" class="signs">=</button>
       </div>
       </div>
     </div>

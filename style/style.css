@@ -47,5 +47,6 @@ button{
     padding: 2px;
 }
 
-
-
+button .op{
+    color: rgb(255, 147, 6);
+}
