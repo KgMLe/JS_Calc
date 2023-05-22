@@ -1,3 +1,5 @@
+/* GUI inspired by samsung calculator */
+
 *{
     border: 0;
     padding: 0;
@@ -15,38 +17,56 @@
     background-color: rgb(0, 0, 0);
     height: 100vh;
     border: solid 1px rgb(139, 180, 204);
-    
 }
 
 input{
     display: block;
-     height: 55px; 
-     width: 295px;
-    grid-column: span 4;
+     height: 195px; 
+     width: 275px;
+     background-color: #000000;
+     font-size: 2rem;
+     text-align: end;
+     color: rgb(139, 180, 204);
+     padding-inline: .5rem;
+     border-bottom: 1px solid rgb(139, 180, 204);
 }
 
 .calculator{
     border-radius: 14px;
-    background: #0d0d0d;
-    grid-template-columns: repeat(4,60px);
+    background: #000000;
+    /* grid-template-columns: repeat(4,60px); */
     border: solid 1px rgb(139, 180, 204);
-    
+    padding: 5px; 
+}
+
+.calc{
+    padding: .3rem;
 }
 
 button{
-    width: 70px;
-    height: 70px;
-    
+    width: 65px;
+    height: 65px;
+    /* padding-inline: 15px; */
 }
 
 .calc button{
-    border-radius: 40%; 
+    border-radius: 50%; 
     background-color: rgb(44, 35, 23);
     color: rgb(139, 180, 204);
     grid-template-columns: repeat(4,60px);
     padding: 2px;
+    font-size: 1rem;
 }
 
-button .op{
+button.op{
     color: rgb(255, 147, 6);
+
+}
+
+button.del{
+    color: red;
+}
+
+button.ans{
+    color: green;
 }

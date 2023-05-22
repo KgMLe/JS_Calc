@@ -1,37 +1,27 @@
-// const input =document.querySelector('input')
-// const button =document.querySelectorAll('button')
+//code inspired by https://www.makeuseof.com/build-a-simple-calculator-using-html-css-javascript/
 
-function display (value){
+let sum = "";
+
+function display(value) {
   document.querySelector('input').value += value
 }
 
 function del(){
-  let display = document.querySelector('input').value = display.slice(0,-1)
+   document.getElementById('inputtext').value = 
+  document.getElementById('inputtext').value.slice(0, -1);
 }
 
-function clear(){
-  document.querySelector('input').value = ''
+function clearSum(){
+  document.getElementById('inputtext').value = sum;
 }
 
-function percentage(value){
-  let display = document.querySelector('input').value
-  document.querySelector('input').value = eval(display)/100
-}
+// function percentage(value){
+//   let display = document.querySelector('input').value
+//   document.querySelector('inputText').value = eval(display)/100
+// }
 
-function ans(){
+function evaluateSum(){
   let display = document.querySelector('input').value
   document.querySelector('input').value = eval(display)
 
-}
-
-function parentheses() {
-
-  let parenthesesOpen = false;
-  if (parenthesesOpen) {
-    display(')');
-    parenthesesOpen = false;
-  } else {
-    display('(');
-    parenthesesOpen = true;
-  }
 }
