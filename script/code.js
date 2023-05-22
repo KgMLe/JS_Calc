@@ -13,6 +13,7 @@ function del(){
 
 function clearSum(){
   document.getElementById('inputtext').value = sum;
+
 }
 
 // function percentage(value){
@@ -22,6 +23,6 @@ function clearSum(){
 
 function evaluateSum(){
   let display = document.querySelector('input').value
-  document.querySelector('input').value = eval(display)
+  document.querySelector('input').value = eval(display).toFixed(2)
 
 }
